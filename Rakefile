@@ -88,7 +88,7 @@ def ppm2png( ppm, png )
 end
 
 def png2pdf( png, pdf )
-	sh "sam2p -j:quiet #{ENV['KINDLIZER_PHASE3_OPT']} #{png} #{pdf}"
+	sh "convert #{ENV['KINDLIZER_PHASE3_OPT']} #{png} #{pdf}"
 end
 
 pages = count_pages
